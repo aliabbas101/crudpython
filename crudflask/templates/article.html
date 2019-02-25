@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<h1>{{data.title}}</h1>
+<img src="" alt="">
+<blockquote>
+    {{data.body|safe}}
+    <small>{{data.create_date}}--  <strong><cite title="Source Title">{{data.author}}</cite></strong></small>
+  </blockquote>
+
+
+{% endblock %}

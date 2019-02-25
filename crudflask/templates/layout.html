@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>FlaskApp</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
+        <script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+        <script src="{{url_for('static',filename='js/bootstrap.min.js') }}"></script>
+        <script src="{{url_for('static',filename='angular.min.js') }}"></script>
+    
+</head>
+<body>
+    {% include 'includes/_navbar.html' %}
+   <div class="container">
+        {% include 'includes/_messages.html' %}
+        {% block body %}{% endblock %}
+   </div>
+   <script src="{{url_for('static', filename='ckeditor/ckeditor.js')}}"></script>   
+ <script type="text/javascript">
+ CKEDITOR.replace('editor1');
+ </script>
+</body>
+</html>
