@@ -1,5 +1,7 @@
 # crudpython
-
+<html>
+  <head>
+    
 <style>
   .btn-style
   {
@@ -9,4 +11,7 @@
   font-size:20px;
   }
   </style>
-<a href="http://flaskapptodo.herokuapp.com">Live Preview</a>
+  </head>
+  <body>
+<a class="btn-style" href="http://flaskapptodo.herokuapp.com">Live Preview</a>
+</body>
